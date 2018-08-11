@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Naveen Gara}} & Email : \href{mailto:naveen.gara@gmail.com}{naveen.gara@gmail.com}\\
+  & Mobile : +1-848-628-4207 \\
+\end{tabular*}
+
+
+\begin{comment}
+Engineering %age as far as I remeber is 86% (Or is it 76%?). Figure it out when you find time!!
+\end{comment}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Jayachamarajendra College of Engineering}{Mysore, India}
+      {Bachelor of Engineering in Electronics and Communications}{Aug. 2002 -- July. 2006}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages} {C++, C, python, bash}
+    \resumeSubItem{Platforms} {Linux(Windriver, Ubuntu), Unix(HP-UX, AIX, Solaris)}
+    \resumeSubItem{Tools} {CMake, GNUMake, gdb, }
+    \resumeSubItem{Testing Frameworks} {Squish, GoogleTest, Cucumber}
+    \resumeSubItem{Protocols} {CAN (Vehicle bus standard), FIX(Financial Information eXchange)}
+    \resumeSubItem{Others} {Test Driven Development, Agile, Multithreading, Qt, Mercurial, Git, sqlite, ComDB, Linux IPCs, awk, sed, valgrind}
+
+    
+  \resumeSubHeadingListEnd
+ 
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\begin{comment}
+Some reference links,
+John Deere,
+https://www.deere.com/en/technology-products/precision-ag-technology/guidance/gen-4-premium-activation/
+
+\end{comment}
+
+    \resumeSubheading
+      {John Deere}{Des Moines, IA}
+      {Software Engineer}{June 2012 - Present}
+      \resumeItemListStart
+        \resumeItem{Gen4 CommandCenter\texttrademark\ Displays}
+          {Develop software for displays of family of Autotrack guidance agriculture machines (like tractors) which farmers use for Presicion Agriculture.}
+        \resumeItem{Reprogramming Firmware}
+          {Designed and developed Reprogramming module for embedded display which deals with installation and updates of Gen4 CommandCenter Display.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bloomberg}{Manhattan, NY}
+      {Software Engineer}{Apr 2011 - May 2012}
+      \resumeItemListStart
+        \resumeItem{STEP (Add on software for OrderManagementSystem)}
+          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+        \resumeItem{Tool to test STEP}
+          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Toshiba}{Bangalore, India}
+      {Software Developer}{Aug 2006 - Feb 2011}
+      \resumeItemListStart
+        \resumeItem{Printer Firmware}
+          {Develop firmware for Toshiba's vast range of Multi Function Peripherals(MFPs) in C++ and WindriverLinux.}
+        \resumeItem{Onsite Integration}
+          {Integration of all three layers at the client location (Toshiba, Japan) by coordinating with all the teams.}
+        \resumeItem{MFPUtility Libraries}
+          {Develop algorithms/libraries specific to printers (like Magnification\%, Drawer selection, ExitTray selection, Staple/Duplex judgment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mindtree}{Bangalore, India}
+      {Internship Project}{Dec 2005 - Mar 2006}
+      \resumeItemListStart
+\begin{comment}
+Developing SCILAB model CVSD encoder/decoder for Bluetooth: 
+\end{comment}
+        \resumeItem{CVSD encode/decoder}
+          {Develop SCILAB model for CVSD encoder/decoder (which is an Audio CODEC) as per Bluetooth CVSD specification and do the performance analysis to find the best parameters.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\begin{comment}
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+\end{comment}
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

@@ -64,6 +64,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
+\newcommand{\resumeItemSkills}[1]{\textbf{Skills:}{ #1}}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -96,10 +99,10 @@ Engineering %age as far as I remeber is 86% (Or is it 76%?). Figure it out when 
   \resumeSubHeadingListStart
     \resumeSubItem{Languages} {C++, C, python, bash}
     \resumeSubItem{Platforms} {Linux(Windriver, Ubuntu), Unix(HP-UX, AIX, Solaris)}
-    \resumeSubItem{Tools} {CMake, GNUMake, gdb, }
+    \resumeSubItem{Tools} {CMake, GNUMake, gdb}
     \resumeSubItem{Testing Frameworks} {Squish, GoogleTest, Cucumber}
     \resumeSubItem{Protocols} {CAN (Vehicle bus standard), FIX(Financial Information eXchange)}
-    \resumeSubItem{Others} {Test Driven Development, Agile, Multithreading, Qt, Mercurial, Git, sqlite, ComDB, Linux IPCs, awk, sed, valgrind}
+    \resumeSubItem{Others} {Test Driven Development, Agile, Multithreading, Qt, Mercurial, Git, sqlite, ComDB, Linux IPCs, awk, sed, valgrind, gperf, valgrind}
 
     
   \resumeSubHeadingListEnd
@@ -128,6 +131,7 @@ https://www.deere.com/en/technology-products/precision-ag-technology/guidance/ge
         \resumeItem{Reprogramming Firmware}
           {Designed and developed Reprogramming module for embedded display which deals with installation and updates of Gen4 CommandCenter Display.}
       \resumeItemListEnd
+      \resumeItemSkills{C++, Qt/QtCreatorIDE, python, bash, Agile, mercurial, git, CAN-protocol, sqlite3-db, TestDrivenDevelopment(TDD), gtest, Squish(UI-Testing), Cucumber, gperf, valgrind}
 
     \resumeSubheading
       {Bloomberg}{Manhattan, NY}
@@ -138,6 +142,8 @@ https://www.deere.com/en/technology-products/precision-ag-technology/guidance/ge
         \resumeItem{Tool to test STEP}
           {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
       \resumeItemListEnd
+      \resumeItemSkills{C++, JavaScript, Unix(AIX,  HP-UX,  Solaris), RAPID(UI development framework), SQL,STL, FIX-protocol, Service orientied architecture, XML, Multithreading (IPC), OOP, SVN.}
+
 
     \resumeSubheading
       {Toshiba}{Bangalore, India}
@@ -152,17 +158,20 @@ https://www.deere.com/en/technology-products/precision-ag-technology/guidance/ge
         \resumeItem{MFPUtility Libraries}
           {Develop algorithms/libraries specific to printers (like Magnification\%, Drawer selection, ExitTray selection, Staple/Duplex judgment.}
       \resumeItemListEnd
+      \resumeItemSkills{C++, Linux  IPCs,  Multi-threading, Windriver  Linux,  PowerPC,  bash  scripting,  PVCS, sqlite3 db, awk, sed, valgrind}
 
     \resumeSubheading
       {Mindtree}{Bangalore, India}
       {Internship Project}{Dec 2005 - Mar 2006}
       \resumeItemListStart
 \begin{comment}
-Developing SCILAB model CVSD encoder/decoder for Bluetooth: 
+Developing matlab model CVSD encoder/decoder for Bluetooth: 
 \end{comment}
         \resumeItem{CVSD encode/decoder}
-          {Develop SCILAB model for CVSD encoder/decoder (which is an Audio CODEC) as per Bluetooth CVSD specification and do the performance analysis to find the best parameters.}
+          {Develop MATLAB model for CVSD encoder/decoder (which is an Audio CODEC) as per Bluetooth CVSD specification and do the performance analysis to find the best parameters.}
       \resumeItemListEnd
+      %\resumeItemSkills{Matlab, Bluetooth CVSD spec/algorithms, CVS}
+
 
   \resumeSubHeadingListEnd
 

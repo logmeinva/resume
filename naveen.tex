@@ -63,7 +63,7 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\resumeSubHeadingEnvironment}[1]{\textbf{Environment:}{ #1}}
+\newcommand{\resumeSubHeadingEnvironmentAndTools}[1]{\textbf{Environment/Tools:}{ #1}}
 
 
 \newcommand{\cplusplus}{C\texttt{++}}
@@ -103,7 +103,7 @@ Engineering %age as far as I remeber is 86% (Or is it 76%?). Figure it out when 
     \resumeSubItem{Tools} {CMake, GNUMake, gdb}
     \resumeSubItem{Testing Frameworks} {Squish, GoogleTest, Cucumber}
     \resumeSubItem{Protocols} {CAN (Vehicle bus standard), FIX(Financial Information eXchange)}
-    \resumeSubItem{Others} {Test Driven Development, Agile, Multithreading, Qt, Mercurial, Git, sqlite, ComDB, Linux IPCs, awk, sed, valgrind, gperf, valgrind}
+    %\resumeSubItem{Others} {Test Driven Development, Agile, Multithreading, Qt, Mercurial, Git, sqlite, ComDB, Linux IPCs, awk, sed, valgrind, gperf, valgrind}
 
     
   \resumeSubHeadingListEnd
@@ -113,15 +113,8 @@ Engineering %age as far as I remeber is 86% (Or is it 76%?). Figure it out when 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
-\begin{comment}
-Some reference links,
-John Deere,
-https://www.deere.com/en/technology-products/precision-ag-technology/guidance/gen-4-premium-activation/
-
-\end{comment}
-
     \resumeSubheading
+      %https://www.deere.com/en/technology-products/precision-ag-technology/guidance/gen-4-premium-activation/
       {John Deere}{Des Moines, IA}
       {Senior Software Engineer}{June 2012 - Present}
       \resumeItemListStart
@@ -130,23 +123,24 @@ https://www.deere.com/en/technology-products/precision-ag-technology/guidance/ge
         \resumeItem{Defects Triaging}
           {Initial triaging/analysing of defects that are logged by farm testers to be assigned to right team. This needs a robust knowledge of the entire system and involves a lot of communication with various teams.}
         \resumeItem{Reprogramming Firmware}
-          {Designed and developed Reprogramming module for embedded display which deals with installation and updates of Gen4 CommandCenter Display.}
+          {Develop Reprogramming module which deals with installation and updates of Gen4 CommandCenter\texttrademark\ Display.}
       \resumeItemListEnd
-      \resumeSubHeadingEnvironment{\cplusplus, Qt/QtCreatorIDE, python, bash, Agile, mercurial, git, CAN-protocol, sqlite-db, TestDrivenDevelopment(TDD), gtest, Squish(UI-Testing), Cucumber, gperf, valgrind}
+      \resumeSubHeadingEnvironmentAndTools{\cplusplus, Qt/QtCreatorIDE, python, bash, Multithreading, Agile, mercurial, git, CAN-protocol, sqlite-db, TestDrivenDevelopment(TDD), gtest, Squish(UI-Testing), Cucumber, gperf, valgrind}
 
     \resumeSubheading
       {Bloomberg}{Manhattan, NY}
       {Software Engineer}{Apr 2011 - May 2012}
       \resumeItemListStart
         \resumeItem{STEP (Add on software for OrderManagementSystem)}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+         {Develop STEP Software which integrates with the various OMS products available in the market that helps traders to automate from sending IOIs (Indication of interest) and ADVs(Advertisement) without human intervention.}
         \resumeItem{Tool to test STEP}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
+         {Developed a test tool which will inject Orders that otherwise would have been sent by the associated OMS. This tool would generate all possible fix messages(like NewOrder/ FilledOrder/ PartialFill/ Cancel/ Replace) which was extensively used to test the main product (STEP) which we were developing.}
       \resumeItemListEnd
-      \resumeSubHeadingEnvironment{\cplusplus, JavaScript, Unix(AIX,  HP-UX,  Solaris), RAPID(UI development framework), SQL,STL, FIX-protocol, Service orientied architecture, XML, Multithreading (IPC), OOP, svn.}
+      \resumeSubHeadingEnvironmentAndTools{\cplusplus, JavaScript, Unix(AIX,  HP-UX,  Solaris), RAPID(UI development framework), SQL, ComDB, STL, FIX-protocol, Service orientied architecture, XML, Multithreading (IPC), OOP, svn.}
 
 
     \resumeSubheading
+      %https://www.toshibatec.com/cnt/products_overseas/MFP/
       {Toshiba}{Bangalore, India}
       {Software Developer}{Aug 2006 - Feb 2011}
       \resumeItemListStart
@@ -159,7 +153,7 @@ https://www.deere.com/en/technology-products/precision-ag-technology/guidance/ge
         \resumeItem{MFPUtility Libraries}
           {Develop algorithms/libraries specific to printers (like Magnification\%, Drawer selection, ExitTray selection, Staple/Duplex judgment.}
       \resumeItemListEnd
-      \resumeSubHeadingEnvironment{\cplusplus, Linux  IPCs,  Multi-threading, Windriver  Linux,  PowerPC,  bash  scripting,  PVCS(version control), sqlite-db, awk, sed, valgrind}
+      \resumeSubHeadingEnvironmentAndTools{\cplusplus, Linux  IPCs,  Multithreading, Windriver  Linux,  PowerPC,  bash  scripting,  PVCS(version control), sqlite-db, awk, sed, valgrind}
 
     \resumeSubheading
       {Mindtree}{Bangalore, India}
@@ -169,9 +163,9 @@ https://www.deere.com/en/technology-products/precision-ag-technology/guidance/ge
 Developing matlab model CVSD encoder/decoder for Bluetooth: 
 \end{comment}
         \resumeItem{CVSD encode/decoder}
-          {Develop MATLAB model for CVSD encoder/decoder (which is an Audio CODEC) as per Bluetooth CVSD specification and do the performance analysis to find the best parameters.}
+          {Develop a MATLAB model for CVSD encoder/decoder (which is an Audio CODEC) as per Bluetooth CVSD specification and do the performance analysis to find the best parameters.}
       \resumeItemListEnd
-      %\resumeSubHeadingEnvironment{Matlab, Bluetooth CVSD spec/algorithms, CVS}
+      %\resumeSubHeadingEnvironmentAndTools{Matlab, Bluetooth CVSD spec/algorithms, CVS}
 
 
   \resumeSubHeadingListEnd
